@@ -15,7 +15,6 @@
   transform: translateY(0);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
-.container:
 .logo {
   width: 3rem;
   height: 3rem;
