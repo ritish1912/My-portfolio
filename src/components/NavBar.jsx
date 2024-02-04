@@ -32,7 +32,7 @@ function NavBar() {
       <div className={styles.name_and_logo}>
         <img
           src={
-            "https://lh3.googleusercontent.com/drive-storage/ANtge_FmvPq3WcqkuONn0u1CQNrnOf2TiFTJNBOfh7jFtWMI_oIyAoleEU1sNiflxG08ZHNyXc4AyCCksWU9NYbdN579hgbg8dfdDoq_jdUiUw=s220"
+            "https://github.com/ritish1912/My-portfolio/blob/main/src/resources/PXL_20230521_165428269-Photoroom.png-Photoroom%20(2).png"
           }
           className={styles.logo}
           alt="profileImage"
