@@ -31,9 +31,7 @@ function NavBar() {
     >
       <div className={styles.name_and_logo}>
         <img
-          src={
-            "https://github.com/ritish1912/My-portfolio/blob/main/src/resources/PXL_20230521_165428269-Photoroom.png-Photoroom%20(2).png"
-          }
+          src={require("../resources/PXL_20230521_165428269-Photoroom.png-Photoroom (2).png")}
           className={styles.logo}
           alt="profileImage"
         />
