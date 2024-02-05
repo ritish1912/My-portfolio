@@ -32,7 +32,7 @@
 .social_container {
   position: absolute;
   top: 40%;
-  width: 50px;
+  width: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,18 +50,23 @@
   width: 50px;
   height: 50px;
 }
+.social_container a:hover {
+  /* border: 1px solid grey; */
+  transform: scale(1.2);
+}
 .text_bubble {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   position: absolute;
+  font-size: 14px;
   width: 80px;
-  height: 30px;
-  left: 64px;
+  height: 20px;
+  left: 60px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   color: black;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .text-img {
