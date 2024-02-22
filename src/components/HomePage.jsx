@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/homePage.module.css";
+import scrollgif from "../resources/scrollGif.gif";
 
 function HomePage() {
   return (
@@ -12,6 +13,9 @@ function HomePage() {
           overall product
         </div>
         <a className={styles.button}>Projects</a>
+        <div>
+          <img className={styles.scrollGif} src={scrollgif} alt="scroll" />
+        </div>
       </div>
     </div>
   );

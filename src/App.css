@@ -52,7 +52,7 @@
 }
 .social_container a:hover {
   /* border: 1px solid grey; */
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 .text_bubble {
   display: inline-flex;

@@ -57,3 +57,8 @@
   cursor: pointer;
   transform: translate(0, -5px);
 }
+.scrollGif {
+  width: 100px;
+  height: 100px;
+  z-index: 999;
+}
