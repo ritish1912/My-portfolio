@@ -13,9 +13,7 @@ function HomePage() {
           overall product
         </div>
         <a className={styles.button}>Projects</a>
-        <div>
-          <img className={styles.scrollGif} src={scrollgif} alt="scroll" />
-        </div>
+        <div></div>
       </div>
     </div>
   );
