@@ -38,10 +38,10 @@ function NavBar() {
         <div className={styles.name}>RITISH SRIVASTAVA</div>
       </div>
       <div className={styles.menu}>
-        <div>HOME</div>
-        <div>ABOUT</div>
-        <div>PROJECTS</div>
-        <div>CONTACT</div>
+        <a>HOME</a>
+        <a href="#about">ABOUT</a>
+        <a>PROJECTS</a>
+        <a>CONTACT</a>
       </div>
     </div>
   );

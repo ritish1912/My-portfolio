@@ -12,17 +12,33 @@ function AboutMe() {
       </div>
       <br />
       <div>
-        As per experience , I bag an experience of about 12 months of internship
-        working in multiple companies, where I got a chance to work on different
-        tech stacks. In these internships I primarily worked on React and Spring
-        Boot with backend being MySQL, PostgreSQL, AWS, the rest of the skills
-        have been acquired due to my curiosity about technology
+        During my year-long internships at various companies, I worked
+        extensively with React and Spring Boot, alongside databases like MySQL,
+        PostgreSQL, and AWS. I also picked up additional skills out of curiosity
+        which are mentioned here in this section.
       </div>
       <br />
       <div>
         I'm <b>open to Job opportunities</b> where I can contribute, learn and
         grow. If you have a good opportunity that matches my skills and
-        experience then don't hesitate to <b>contact me</b>.
+        experience then don't hesitate to <b>contact me</b>. You can also take a
+        look at my{" "}
+        <a
+          style={{ color: "#7843e9" }}
+          href="https://www.linkedin.com/in/ritish-srivastava/"
+          target="_blank"
+        >
+          <b>LinkedIn</b>
+        </a>{" "}
+        and{" "}
+        <a
+          style={{ color: "#7843e9" }}
+          href="https://github.com/ritish1912"
+          target="_blank"
+        >
+          <b>Github</b>
+        </a>{" "}
+        profiles to get more insight about me.
       </div>
     </>
   );
@@ -44,7 +60,7 @@ function AboutMe() {
     "AWS",
   ];
   return (
-    <div className={styles.container}>
+    <div id="about" className={styles.container}>
       <div className={styles.heading_and_info}>
         <div className={styles.heading}>ABOUT ME</div>
         <div className={styles.info}>
@@ -56,6 +72,7 @@ function AboutMe() {
         <div className={styles.know_me}>
           <div className={styles.title}>Get to know me!</div>
           <div className={styles.description}>{description}</div>
+          <div className={styles.button}> Contact</div>
         </div>
         <div className={styles.skills}>
           <div className={styles.my_skills}>My Skills</div>

@@ -43,11 +43,13 @@
   color: #333;
   gap: 70px;
 }
-.menu div {
+.menu a {
   cursor: pointer;
   transition: color 0.3s ease-out;
+  text-decoration: none;
+  color: black;
 }
-.menu div:hover {
+.menu a:hover {
   color: #7843e9;
 }
 .visible {

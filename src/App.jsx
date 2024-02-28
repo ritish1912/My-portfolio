@@ -5,6 +5,7 @@ import leetcodeLogo from "./resources/leetcode-svgrepo-com.svg";
 import gmailLogo from "./resources/Gmail-Icon-Vector.jpg";
 import { useState } from "react";
 import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
 
 function App() {
   const [showBubbleLinkedIn, setShowBubbleLinkedIn] = useState(false);
@@ -87,6 +88,7 @@ function App() {
       </div>
       <HomePage />
       <AboutMe />
+      <Projects />
     </div>
   );
 }

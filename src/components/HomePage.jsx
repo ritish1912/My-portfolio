@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/homePage.module.css";
-import scrollgif from "../resources/scrollGif.gif";
 
 function HomePage() {
   return (
