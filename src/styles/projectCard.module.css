@@ -1,7 +1,71 @@
 .container {
   display: flex;
+  /* height: 200px;
+  width: 400px; */
+  background-color: transparent;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 40px;
 }
 .laptop_img {
-  width: 400px;
-  height: 200px;
+  width: 690px;
+  height: 408px;
+  background-color: transparent;
+}
+.p_name {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.description {
+  font-size: 17px;
+  color: #666;
+  width: 450px;
+  text-align: justify;
+  line-height: 1.8rem;
+  margin-bottom: 30px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+.button_live {
+  background: #7843e9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  padding: 0.8rem 1.7rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button_github {
+  background: transparent;
+  color: #7843e9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  padding: 0.8rem 1.7rem;
+  font-size: 14px;
+  border: 2px solid #7843e9;
+  cursor: pointer;
+}
+
+.button_live:hover {
+  transform: translateY(-5px);
+}
+
+.button_github:hover {
+  transform: translateY(-5px);
 }

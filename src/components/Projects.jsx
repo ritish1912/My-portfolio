@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/projects.module.css";
 import ProjectCard from "./ProjectCard";
-import portfolioImg from "../resources/Portfolio_laptop.png";
+import portfolioImg from "../resources/laptop img .jpg";
 
 function Projects() {
   return (
@@ -13,34 +13,36 @@ function Projects() {
           each of them I have provided their Github link for reference
         </div>
       </div>
-      <ProjectCard
-        laptopImg={portfolioImg}
-        description={
-          "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally"
-        }
-        isDeployed={true}
-      />
-      <ProjectCard
-        laptopImg={portfolioImg}
-        description={
-          "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally"
-        }
-        isDeployed={true}
-      />
-      <ProjectCard
-        laptopImg={portfolioImg}
-        description={
-          "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally"
-        }
-        isDeployed={true}
-      />
-      <ProjectCard
-        laptopImg={portfolioImg}
-        description={
-          "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally"
-        }
-        isDeployed={true}
-      />
+      <div className={styles.cards}>
+        <ProjectCard
+          laptopImg={portfolioImg}
+          description={
+            "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally"
+          }
+          isDeployed={true}
+        />
+        <ProjectCard
+          laptopImg={portfolioImg}
+          description={
+            "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally"
+          }
+          isDeployed={true}
+        />
+        <ProjectCard
+          laptopImg={portfolioImg}
+          description={
+            "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally"
+          }
+          isDeployed={true}
+        />
+        <ProjectCard
+          laptopImg={portfolioImg}
+          description={
+            "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally"
+          }
+          isDeployed={true}
+        />
+      </div>
     </div>
   );
 }
