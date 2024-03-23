@@ -6,6 +6,7 @@ import gmailLogo from "./resources/Gmail-Icon-Vector.jpg";
 import { useState } from "react";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   const [showBubbleLinkedIn, setShowBubbleLinkedIn] = useState(false);
@@ -89,6 +90,7 @@ function App() {
       <HomePage />
       <AboutMe />
       <Projects />
+      <ContactMe />
     </div>
   );
 }

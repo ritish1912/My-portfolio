@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(/src//resources/common-bg.svg);
+  background-position: center;
+  height: 150vh;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  /* position: relative; */
+}
+.heading {
+  display: block;
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  color: #111;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -25px;
+  border-radius: 4px;
+  left: 40%;
+  width: 30px;
+  height: 5px;
+  background-color: #7843e9;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 19px;
+  width: 50%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: white;
+  padding: 3rem 3rem;
+  /* margin-top: 6rem; */
+  max-width: 80rem;
+  text-align: right;
+  width: 45%;
+  border-radius: 5px;
+  margin: 5rem auto 0 auto;
+}
+
+label {
+  color: #666;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+input {
+  margin-bottom: 40px;
+  outline: none;
+}
+#name,
+#email {
+  color: #340;
+  padding: 1.3rem 1.3rem;
+  border: 1px solid #ebebeb;
+  font-size: 14px;
+  letter-spacing: 0px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 550;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#message {
+  color: #340;
+  padding: 1rem 1.3rem;
+  border: 1px solid #ebebeb;
+  font-size: 14px;
+  letter-spacing: 0px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 550;
+  height: 200px;
+  outline: none;
+  width: 640px;
+  resize: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.submit {
+  margin-top: 50px;
+  text-align: center;
+  background: #7843e9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  padding: 1.5rem 4.5rem;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 80px;
+}
+.submit:hover {
+  transform: translate(0, -5px);
+}
