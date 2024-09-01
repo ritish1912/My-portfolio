@@ -5,7 +5,7 @@ import portfolioImg from "../resources/laptop img .jpg";
 
 function Projects() {
   return (
-    <div className={styles.container}>
+    <div id="project" className={styles.container}>
       <div className={styles.heading_and_info}>
         <div className={styles.heading}>Projects</div>
         <div className={styles.info}>

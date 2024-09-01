@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/navBar.module.css";
+import profileImage from "../resources/PXL_20230521_165428269-Photoroom.png-Photoroom (2).png"; // Import image at the top
 
 function NavBar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -30,18 +31,14 @@ function NavBar() {
       }`}
     >
       <div className={styles.name_and_logo}>
-        <img
-          src={require("../resources/PXL_20230521_165428269-Photoroom.png-Photoroom (2).png")}
-          className={styles.logo}
-          alt="profileImage"
-        />
+        <img src={profileImage} className={styles.logo} alt="profileImage" />
         <div className={styles.name}>RITISH SRIVASTAVA</div>
       </div>
       <div className={styles.menu}>
-        <a>HOME</a>
+        <a href="#home">HOME</a>
         <a href="#about">ABOUT</a>
-        <a>PROJECTS</a>
-        <a>CONTACT</a>
+        <a href="#project">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
       </div>
     </div>
   );
