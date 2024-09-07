@@ -7,6 +7,8 @@ import { useState } from "react";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [showBubbleLinkedIn, setShowBubbleLinkedIn] = useState(false);
@@ -16,6 +18,7 @@ function App() {
 
   return (
     <div className="App">
+      <ToastContainer />
       <NavBar />
       <div className="social_container">
         <a

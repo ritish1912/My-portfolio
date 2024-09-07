@@ -21,11 +21,25 @@ function ContactMe() {
   };
 
   //sends the email
-  const submitHandler = () => {
-    const res = contactMeEmail(formData.name, formData.email, formData.message);
+  const submitHandler = async () => {
+    if (formData.name == "" || formData.email == "" || formData.message == "") {
+      toast.error("Please do fill all fields");
+      return;
+    }
+
+    const res = await contactMeEmail(
+      formData.name,
+      formData.email,
+      formData.message
+    );
     if (res.response_code == 1) {
-      toast.success("Email sent successfully");
+      toast.success(res.message);
     } else toast.error("Oops something went wrong");
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
   return (
     <div id="contact" className={styles.container}>
