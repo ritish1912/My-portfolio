@@ -3,12 +3,13 @@ import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
 import leetcodeLogo from "./resources/leetcode-svgrepo-com.svg";
 import gmailLogo from "./resources/Gmail-Icon-Vector.jpg";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Experience from "./components/Experience";
 
 function App() {
   const [showBubbleLinkedIn, setShowBubbleLinkedIn] = useState(false);
@@ -16,8 +17,17 @@ function App() {
   const [showBubbleLeetcode, setShowBubbleLeetcode] = useState(false);
   const [showBubbleGmail, setShowBubbleGmail] = useState(false);
 
+  const topRef = useRef(null);
+
+  //For rendering from the top on every reload
+  useEffect(() => {
+    if (topRef.current) {
+      topRef.current.scrollIntoView({ behaviour: "smooth" });
+    }
+  }, []);
+
   return (
-    <div className="App">
+    <div ref={topRef} className="App">
       <ToastContainer />
       <NavBar />
       <div className="social_container">
@@ -92,6 +102,7 @@ function App() {
       </div>
       <HomePage />
       <AboutMe />
+      <Experience />
       <Projects />
       <ContactMe />
     </div>

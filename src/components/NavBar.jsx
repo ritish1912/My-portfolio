@@ -37,6 +37,7 @@ function NavBar() {
       <div className={styles.menu}>
         <a href="#home">HOME</a>
         <a href="#about">ABOUT</a>
+        <a href="#experience">Experience</a>
         <a href="#project">PROJECTS</a>
         <a href="#contact">CONTACT</a>
       </div>
