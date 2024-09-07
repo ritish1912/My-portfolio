@@ -123,3 +123,7 @@ input {
 .submit:hover {
   transform: translate(0, -5px);
 }
+#message {
+  width: auto;
+  height: auto;
+}
